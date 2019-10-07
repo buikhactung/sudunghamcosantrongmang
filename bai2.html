@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = prompt("mời nhập số: ")
+    let a = num.toString();
+    let result =[a[0]];
+    for (let i=num;i>=1;i--) {
+        if ((a[i] % 2 === 0) && (a[i+1] % 2 === 0)) {
+            result.push('-',a[i+1]);
+        } else {
+            result.push(a[i]);
+        }
+    }
+    document.write(result.join(''))
+</script>
+</body>
+</html>
